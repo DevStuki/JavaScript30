@@ -1,0 +1,35 @@
+    /*
+      misc styles, nothing to do with CSS variables
+    */
+:root {
+    --base: #ffc600;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img { /* 변수에 대입하는 스타일, 아래처럼 연결해두고 :root의 값을 바꾸면 다 바뀐다.*/
+    background: var(--base);
+    padding: var(--spacing);
+    filter: blur(var(--blur));
+}
+
+.hl { /* 변수에 대입하는 스타일 */
+    color: var(--base);
+}
+
+body {
+    text-align: center;
+    background: #193549;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+    }
+
+.controls {
+margin-bottom: 50px;
+}
+
+input {
+width: 100px;
+}
